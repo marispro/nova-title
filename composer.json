@@ -1,0 +1,30 @@
+{
+    "name": "marispro/nova-title",
+    "description": "Laravel Nova tool for dynamic page titles",
+    "keywords": [
+        "laravel",
+        "nova",
+        "title"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Marispro\\NovaTitle\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Marispro\\NovaTitle\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

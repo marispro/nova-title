@@ -1,5 +1,6 @@
 {
     "name": "marispro/nova-title",
+    "version": "0.2.0",
     "description": "Laravel Nova tool for dynamic page titles",
     "keywords": [
         "laravel",

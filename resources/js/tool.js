@@ -1,8 +1,3 @@
-function parseRouteForDisplay(route)
-{
-    return route.replace("\/", "").split("/").map(_.startCase).join(" > ")
-}
-
 function getResourceMeta(resourceName)
 {
     var resourceMeta = Nova.config.resources.filter(function(resource) {

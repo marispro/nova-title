@@ -13,13 +13,12 @@ function getResourceMeta(resourceName)
 }
 
 Nova.booting((Vue, router, store) => {
-    var originalTitle = document.title;
+    let originalTitle = document.title;
     router.beforeEach((to, from, next) => {
-
-        var resourceMeta = getResourceMeta(to.params.resourceName)
-
-        document.title = resourceMeta.label + " | " + originalTitle
-
-        next()
+        let resourceMeta = getResourceMeta(to.params.resourceName);
+        if(resourceMeta !== null){
+            document.title = resourceMeta.label + " | " + originalTitle;
+        }
+        next();
     })
 });

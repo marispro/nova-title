@@ -1,5 +1,7 @@
-#### Installation:
+##### This package will show meaning full page title in the browser for easier navigation.
 
-Add the package using composer
+#### Installation
+
+Add the package using composer:
 
 `composer require marispro/nova-title`
